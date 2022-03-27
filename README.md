@@ -4,7 +4,13 @@ Using the dynamic Equations and find the state space representation of the syste
 
 We then linearize the above non-linear equation and write the equations in terms of
 
-We then find the optimal input u by solving the LQR problem for the above dynamics with R = 6 and $$Q = \begin{bmatrix} 10000 0 0 0// 0 1 0 0// 0 0 1000 0// 0 0 0 1\end{bmatrix}$$
+We then find the optimal input u by solving the LQR problem for the above dynamics with R = 6 and 
+Q = [
+    [10000.0, 0.0, 0, 0],
+    [0, 1, 0, 0],
+    [0, 0, 10000, 0],
+    [0, 0, 0, 1]
+]
 
 We find the gain matrix by three methods:
 1. Standard LQR function in Python Controls module
