@@ -1,8 +1,8 @@
 # Solving LQR for a pendulum cart
 
-Using the dynamic Equations and find the state space representation of the system.
+Using the dynamic Equations of the pendulum cart sytem and find the state space representation of the system.
 
-We then linearize the above non-linear equation and write the equations in terms of
+Then linearize the non-linear equation and write the equations as a first order differential Equation.
 
 We then find the optimal input u by solving the LQR problem for the above dynamics with R = 6 and 
 Q = [
